@@ -5,7 +5,7 @@ const resultpage = document.getElementById('results-div');
 
 
 const regexRule = (word) =>{
-    const regex = /^1?\s?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{4}$/gi;
+    const regex = /^1?\s?(\(\d{3}\)|\d{3})[\s-]?\d{3}[\s-]?\d{4}$/gi;
     return regex.test(word);
 }
 checkerBtn.addEventListener('click', () =>{
